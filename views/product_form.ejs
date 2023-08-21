@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Create Product</title>
+</head>
+<body>
+    <form action="/add_product" style="border:1px solid #ccc" method="post" enctype="multipart/form-data">
+        <div class="container">
+          <h1 style="text-align: center;color: white;">Create Product</h1>
+          <!-- <hr> -->
+
+          <label for="name"><b>Name product</b></label>
+          <input type="text" placeholder="Enter Name Product" name="name" required>
+      
+          <label for="thumbnail"><b>Thumbnail</b></label>
+          <input type="file" placeholder="Enter Thumbnail" name="thumbnail" required>
+      <br>
+      <br>
+          <label for="price"><b>Price</b></label>
+          <input type="number" placeholder="Enter Price" name="price" required>
+
+          <label for="category"><b>Category</b></label>
+          <input type="text" placeholder="Enter Category" name="category" required>
+      
+          <label for="discription"><b>Discription</b></label>
+          <input type="text" placeholder="Enter Description" name="discription" required>
+      
+          <div class="clearfix">
+            <button style="margin-left: 180px;border-radius: 20px;" type="submit" class="signupbtn">CREATE PRODUCT</button>
+          </div>
+        </div> 
+      </form>
+</body>
+</html>

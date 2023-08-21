@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <form action="/auth/register" style="border:1px solid #ccc" method="post">
+        <div class="container">
+          <h1 style="text-align: center;color: white;">Sign Up</h1>
+          <!-- <hr> -->
+
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="fullname" required>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+      
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+      
+          <div class="clearfix">
+            <button style="margin-left: 180px;border-radius: 20px;" type="submit" class="signupbtn">CREATE ACCOUNT</button>
+          </div>
+
+          <p style="text-align: center;">Already have an account / <a href="/auth/login" style="color:dodgerblue">Login</a> here!</p>
+        </div>
+      </form> 
+</body>
+</html>
