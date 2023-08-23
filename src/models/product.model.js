@@ -4,7 +4,7 @@ const product_schema = new mongoose.Schema({
     name: {
         type : String,
         required : true,
-        minLength : 5,
+        minLength : 3,
         maxLength : 255
     },
     thumbnail: {
@@ -17,7 +17,7 @@ const product_schema = new mongoose.Schema({
         required : true
     },
     category: String,
-    discription: String 
+    description: String 
 });
 
 module.exports = mongoose.model("Product",product_schema);

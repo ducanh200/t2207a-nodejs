@@ -18,11 +18,4 @@ router.get("/",controller.home)
 
 router.get("/about",controller.about);
 
-router.get("/products",controller.products);
-
-router.get('/product_form',controller.product_form);
-
-router.post('/add_product',uploads.single("thumbnail"),controller.add_product);
-
-
 module.exports = router;
